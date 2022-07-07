@@ -10,7 +10,7 @@ body {
   display: flex;
   margin: 0;
   min-height: 100vh;
-  background: #090909 url(../img/george_big.jpg) no-repeat right top;
+  background: #090909 url(img/george_big.jpg) no-repeat right top;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
