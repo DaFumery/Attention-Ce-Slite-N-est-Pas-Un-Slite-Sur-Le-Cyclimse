@@ -12,28 +12,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="quote-container" id="quote-container">
-      <!-- CITATION -->
-      <div class="quote-text">
-        <i class="fas fa-quote-left"></i>
-        <span id="quote"
-          >Attention, ce flim n’est pas un flim sur le cyclimse. Merci de votre
-          compréhension.</span
-        ><i class="fas fa-quote-right"></i>
-        <!-- AUTEUR -->
-        <div class="quote-auteur">
-          <span id="auteur">Voix Off</span>
-        </div>
-        <!-- BOUTONS -->
-        <div class="button-container">
-          <button class="twitter-btn" id="twitter-btn" title="Tweet le !">
-            <i class="fab fa-twitter"></i>
-          </button>
-          <button class="new-quote" id="new-quote">Si, señor zorro</button>
+    <!-- BIG TITRE -->
+    <div class="wrapper" id="wrapper">
+      <div class="titre-container" id="titre-container">
+        <h1 class="titre-big">La classe Américaine</h1>
+        <h2 class="ss-titre">Attention ! Ce site n'est pas un site sur le cyclimse</h2>
+      </div>
+      <div class="quote-container" id="quote-container">
+        <!-- CITATION -->
+        <div class="quote-text">
+          <span id="quote"></span>
+          <!-- AUTEUR -->
+          <div class="quote-auteur">
+            <span id="auteur"></span>
+          </div>
+          <!-- BOUTONS -->
+          <div class="button-container">
+            <button class="twitter-btn" id="twitter-btn" title="Tweet le !">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button class="new-quote-btn" id="new-quote-btn">Si, señor zorro</button>
+          </div>
         </div>
       </div>
+          <!-- LOADER -->
+          <div class="loader-container">
+            <div class="loader" id="loader"></div>
+          </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <p>« Un flim pour les amateurs de ouiche lorraine et autres animaux préhistoriques partouzeurs de droite. »</p>
+          <p>Copyleft 2022 - Tous les droits sur ce film reviennent à leurs auteurs. Made with love by @_tanydrej0. <a href="https://github.com/DaFumery/Attention-Ce-Slite-N-est-Pas-Un-Slite-Sur-Le-Cyclimse">Fork me</a> on Github.</p>
+      </div>
+  </footer>
     <!-- SCRIPT -->
-    <script src="script.js"></script>
+    <script src="quotes.js"></script>
+    </script> <script src="script.js"></script>
   </body>
 </html>
