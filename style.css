@@ -8,8 +8,7 @@ html {
 
 body {
   display: flex;
-  margin: 0;
-  min-height: 100vh;
+  min-height: 90vh;
   background: #090909 url(img/george_big.jpg) no-repeat right top;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
@@ -49,14 +48,14 @@ body {
 .quote-container {
   width: 750px;
   max-width: 750px;
-  padding: 20px 30px;
-  margin-left: 20px;
+  padding: 20px 20px;
   background: rgba(26, 3, 3, 0.3);
   box-shadow: 0 8px 32px 0 #8557364a;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 50px 20px;
 }
 
 .quote-text {
@@ -152,7 +151,7 @@ footer {
   width: 100%;
 }
 .footer-container {
-  padding: 20px 30px;
+  padding: 10px 30px;
 }
 .footer-container a {
   text-decoration: none;
@@ -160,10 +159,11 @@ footer {
   font-weight: bold;
 }
 
-/* MEDIA QUERY : Tablet or Smaller */
-@media screen and (max-width: 1000px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1000px) {
   body {
-    background: #090909 url(img/george_big.jpg) no-repeat center top;
+    background: #090909 url(/img/george_big.jpg) no-repeat center;
+    height: 90vh;
   }
   .wrapper {
     margin: auto;
@@ -171,52 +171,18 @@ footer {
   .titre-big {
     font-size: 2rem;
   }
-  .trop-long-mec {
-    font-size: 1.25rem;
-  }
-  .quote-container {
-    margin: auto 10px;
-    width: 500px;
-  }
-  .quote-text {
-    font-size: 1.3rem;
-  }
-  .fa-quote-left,
-  .fa-quote-right {
-    font-size: 1.2rem;
-  }
-  .quote-auteur {
-    font-size: 1rem;
-  }
-  footer {
-    font-size: 0.75rem;
-  }
-}
-
-/* MOBILE OR SMALLER */
-@media screen and (max-width: 812px) {
-  body {
-    background: #090909 url(/img/george_big.jpg) no-repeat center top;
-  }
-  .wrapper {
-    margin: auto;
-  }
-  .titre-big {
-    font-size: 1.8rem;
-  }
   .ss-titre {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .trop-long-mec {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .quote-container {
-    margin: auto;
+    margin: 0px 20px;
     width: auto;
-    max-width: 300px;
   }
   .quote-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .fa-quote-left,
   .fa-quote-right {
@@ -227,6 +193,8 @@ footer {
   }
   footer {
     font-size: 0.75rem;
-    margin-top: 50px;
+  }
+  .footer-container {
+    padding: 0px;
   }
 }
