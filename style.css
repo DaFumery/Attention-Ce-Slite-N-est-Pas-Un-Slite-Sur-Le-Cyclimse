@@ -51,7 +51,7 @@ body {
   max-width: 750px;
   padding: 20px 30px;
   margin-left: 20px;
-  background: rgba(26, 3, 3, 0);
+  background: rgba(26, 3, 3, 0.3);
   box-shadow: 0 8px 32px 0 #8557364a;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -163,7 +163,7 @@ footer {
 /* MEDIA QUERY : Tablet or Smaller */
 @media screen and (max-width: 1000px) {
   body {
-    background: #090909 url(../img/george_big.jpg) no-repeat center top;
+    background: #090909 url(img/george_big.jpg) no-repeat center top;
   }
   .wrapper {
     margin: auto;
@@ -190,5 +190,43 @@ footer {
   }
   footer {
     font-size: 0.75rem;
+  }
+}
+
+/* MOBILE OR SMALLER */
+@media screen and (max-width: 812px) {
+  body {
+    background: #090909 url(/img/george_big.jpg) no-repeat center top;
+  }
+  .wrapper {
+    margin: auto;
+  }
+  .titre-big {
+    font-size: 1.8rem;
+  }
+  .ss-titre {
+    font-size: 0.9rem;
+  }
+  .trop-long-mec {
+    font-size: 1.25rem;
+  }
+  .quote-container {
+    margin: auto;
+    width: auto;
+    max-width: 300px;
+  }
+  .quote-text {
+    font-size: 1.3rem;
+  }
+  .fa-quote-left,
+  .fa-quote-right {
+    font-size: 1.2rem;
+  }
+  .quote-auteur {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 0.75rem;
+    margin-top: 50px;
   }
 }
